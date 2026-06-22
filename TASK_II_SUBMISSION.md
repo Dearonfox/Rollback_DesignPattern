@@ -68,7 +68,7 @@ final_action: create_notice_draft
 
 ### GitHub Repository 링크
 
-`TODO: GitHub Repository 링크 입력`
+https://github.com/Dearonfox/Rollback_DesignPattern.git
 
 ### 실행 방법 또는 확인 방법
 
@@ -102,7 +102,7 @@ python -m unittest discover -s tests
 
 ### 결과물 링크
 
-- GitHub Repository: `TODO: GitHub Repository 링크 입력`
+- GitHub Repository: https://github.com/Dearonfox/Rollback_DesignPattern.git
 
 ### 본인이 직접 수행한 부분
 
