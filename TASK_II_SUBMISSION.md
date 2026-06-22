@@ -106,16 +106,15 @@ python -m unittest discover -s tests
 
 ### 본인이 직접 수행한 부분
 
-- ReAct 패턴의 한계를 분석하고 Rollback-Gated Agent Pattern을 설계했습니다.
-- RecoveryLevel, GateDecision, GateResult 모델을 설계했습니다.
-- Todo / Schedule / Notice 작업 분석 로직을 구현했습니다.
-- 복구 가능성 평가 로직을 구현했습니다.
-- Notice 전송을 Notice 초안 생성으로 변환하는 Execution Gate를 구현했습니다.
-- SQLite 기반 Action Ledger를 구현했습니다.
-- FastAPI 백엔드 API를 구현했습니다.
-- React 기반 프론트엔드 UI를 구현했습니다.
-- Rollback 실행 기능을 구현했습니다.
-- 단위 테스트를 작성하고 검증했습니다.
+- ReAct 패턴의 한계와 상태 변경형 Agent의 문제점을 분석했습니다.
+- Rollback-Gated Agent Pattern의 핵심 아이디어를 설계했습니다.
+- 복구 가능성 평가, Execution Gate, 안전한 대체 작업 변환 구조를 정의했습니다.
+- Todo / Schedule / Notice 관리 서비스라는 구현 주제를 선정했습니다.
+- `send_notice`를 복구 불가능 작업으로 보고 `create_notice_draft`로 변환하는 시나리오를 설계했습니다.
+- 구현 과정에서는 AI 도구를 활용하여 FastAPI, React, SQLite 기반 코드를 생성하고 수정했습니다.
+- 생성된 코드의 동작을 직접 실행하며 오류를 확인하고 수정 방향을 정했습니다.
+- 프론트엔드 화면, 백엔드 API, Action Ledger, Rollback 동작이 패턴 의도와 맞는지 검증했습니다.
+- 테스트 실행 결과를 확인하고 제출 문서를 정리했습니다.
 
 ---
 
@@ -196,10 +195,9 @@ python -m uvicorn main:app --reload
 
 ### 본인이 직접 수행한 부분
 
-- Netflix 스타일 UI를 설계하고 구현했습니다.
-- 콘텐츠 목록 / 상세 화면을 구현했습니다.
-- Back-End API를 설계하고 구현했습니다.
-- Database 모델을 설계하고 연동했습니다.
-- Front-End와 Back-End API를 연동했습니다.
-- 실행 및 테스트를 진행했습니다.
-- README 및 제출 문서를 작성했습니다.
+- Netflix Clone Coding의 화면 구성과 주요 기능 범위를 정했습니다.
+- Front-End와 Back-End를 모두 포함하는 구조로 프로젝트 방향을 잡았습니다.
+- 구현 과정에서는 AI 도구를 활용하여 UI, API, 데이터 처리 코드 작성을 보조받았습니다.
+- 생성된 코드의 실행 결과를 확인하고 필요한 수정 사항을 반영했습니다.
+- Front-End와 Back-End 연동 여부를 확인했습니다.
+- 실행 방법과 제출 문서를 정리했습니다.
