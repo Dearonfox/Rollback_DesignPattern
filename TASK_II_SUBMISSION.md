@@ -76,7 +76,7 @@ final_action: create_notice_draft
 
 ```powershell
 cd C:\Users\me\dogfoot\오픈소스\task2\designpattern
-python -m uvicorn rollback_first_agent.backend.main:app --host 127.0.0.1 --port 8000 --reload
+python -m uvicorn rollback_first_agent.backend.main:app --reload
 ```
 
 프론트엔드 실행:
@@ -84,12 +84,6 @@ python -m uvicorn rollback_first_agent.backend.main:app --host 127.0.0.1 --port 
 ```powershell
 cd C:\Users\me\dogfoot\오픈소스\task2\designpattern\rollback_first_agent\frontend
 npm run dev
-```
-
-브라우저 접속:
-
-```text
-http://127.0.0.1:5173
 ```
 
 CLI 데모 실행:
@@ -209,4 +203,3 @@ python -m uvicorn main:app --reload
 - Front-End와 Back-End API를 연동했습니다.
 - 실행 및 테스트를 진행했습니다.
 - README 및 제출 문서를 작성했습니다.
-

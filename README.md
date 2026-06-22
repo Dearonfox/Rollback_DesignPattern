@@ -110,7 +110,7 @@ python -m rollback_first_agent.demo "팀원들에게 내일 회의 취소됐다�
 
 ```powershell
 pip install -r rollback_first_agent/requirements.txt
-python -m uvicorn rollback_first_agent.backend.main:app --host 127.0.0.1 --port 8000 --reload
+python -m uvicorn rollback_first_agent.backend.main:app --reload
 ```
 
 ## Run Frontend
@@ -154,4 +154,3 @@ python -m unittest discover -s tests
 - irreversible한 `send_notice`를 `create_notice_draft`로 자동 변환
 - original_action과 final_action을 Action Ledger에 함께 저장
 - 실행한 final_action은 rollback plan으로 되돌릴 수 있음
-
